@@ -1,0 +1,200 @@
+
+body {
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(45deg, rgba(134, 191, 242, 0.8), rgb(244, 172, 212), rgba(161, 222, 242, 0.8));
+    font-family: sans-serif;
+}
+
+
+header {
+    background: linear-gradient(45deg, rgba(14, 121, 215, 0.8), rgb(248, 30, 150), rgba(0, 191, 255, 0.8));
+    color: #f8f9fa;
+    padding: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+}
+
+
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    color: aliceblue;
+    padding: 2rem;
+    gap: 2rem;
+}
+
+.container img {
+    height: 250px;
+    width: 250px;
+    border-radius: 15px;
+    object-fit: cover;
+}
+
+.container p {
+    margin: 0;
+    max-width: 500px;
+    text-align: right;
+}
+
+
+main {
+    margin: 20px;
+    padding: 2rem;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    max-width: 600px;
+    margin: auto;
+}
+
+form section {
+    display: flex;
+    flex-direction: column;
+    background-color: aqua;
+    text-align: center;
+    justify-content: center;
+    padding: 1rem;
+    border-radius: 10px;
+}
+
+label {
+    font-weight: bold;
+    text-align: left;
+    margin-bottom: 0.5rem;
+}
+
+input {
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+}
+
+button {
+    background: linear-gradient(45deg, #f81e96, #0e79d7);
+    color: #fff;
+    padding: 0.75rem 1.2rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    align-self: center;
+}
+
+button:hover {
+    background: linear-gradient(45deg, #0e79d7, #f81e96);
+}
+
+
+h1 {
+    text-align: center;
+}
+
+
+.project-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+    max-width: 500px;
+    margin: 2rem auto;
+    padding: 1rem;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.project-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.project-card .view-more {
+    margin-top: 1rem;
+    padding: 0.6rem 1.2rem;
+    background: linear-gradient(45deg, #0e79d7, #f81e96);
+    color: white;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: transform 0.3s ease;
+}
+
+.project-card .view-more:hover {
+    transform: scale(1.05);
+    background: linear-gradient(45deg, #f81e96, #0e79d7);
+}
+
+footer {
+    background: linear-gradient(45deg, rgba(14, 121, 215, 0.8), rgb(253, 22, 118), rgba(0, 191, 255, 0.8));
+    color: aliceblue;
+    text-align: center;
+    padding: 2rem;
+    margin-top: 5rem;
+}
+
+/* style for responsiveness */
+@media (max-width: 768px) {
+  .scrolling-text {
+    font-size: 30px;
+  }
+
+  .container {
+    padding: 1rem;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  h2 {
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 992px) {
+  .journal-grid {
+    grid-template-columns: repeat(2, 1fr); 
+  }
+}
+
+@media (max-width: 576px) {
+  .journal-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .header-bar {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+  nav ul {
+    justify-content: center;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+  }
+}
